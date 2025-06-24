@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User and Location Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>User and Location Manager</h1>
+  <div class="section">
+    <h2>Request Count: <span id="request-count">0</span></h2>
+    <button onclick="resetRequestCount()">Reset Count</button>
+  </div>
+  <div class="section">
+    <h2>Create User</h2>
+    <input type="text" id="user-username" placeholder="Username">
+    <button onclick="createUser()">Create</button>
+  </div>
+  <div class="section">
+    <h2>Create Location</h2>
+    <input type="text" id="location-username" placeholder="Username">
+    <input type="text" id="ip-address" placeholder="IP Address">
+    <button onclick="createLocation()">Create</button>
+  </div>
+  <div class="section">
+    <h2>Users</h2>
+    <table id="users-table">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody id="users-tbody"></tbody>
+    </table>
+  </div>
+  <div class="section">
+    <h2>Locations</h2>
+    <table id="locations-table">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>IP Address</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody id="locations-tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
